@@ -6,7 +6,7 @@ import 'package:http/http.dart' show Client, Response;
 class MovieRepository {
   Client client = Client();
   final _baseUrl = 'api.themoviedb.org';
-  final query = {'api_key': 'afca554b4c79ae5b98c21d3684de4937'};
+  final query = {'api_key': ''};
 
   Future<List<Movie>> loadMovies() async {
     var uri = Uri.https(_baseUrl, "/3/movie/popular", query);
